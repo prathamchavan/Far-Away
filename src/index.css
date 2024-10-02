@@ -131,3 +131,45 @@ input[type="checkbox"] {
   font-weight: 700;
   padding: 3.2rem 0;
 }
+
+/* ---Media Query--- */
+@media (max-width: 600px) {
+  /* Adjust heading size for mobile */
+  h1 {
+    font-size: 5rem;
+    word-spacing: 15px;
+    letter-spacing: -3px;
+  }
+
+  /* Adjust form elements padding and layout */
+  .add-form {
+    padding: 1.6rem 0;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  /* Adjust button and input sizes */
+  button,
+  select,
+  input {
+    padding: 1rem 2.4rem;
+    font-size: 1.6rem;
+  }
+
+  /* Adjust list layout */
+  .list ul {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .list li {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  /* Adjust padding and text size for the stats section */
+  .stats {
+    padding: 2.4rem 0;
+    font-size: 2rem;
+  }
+}
